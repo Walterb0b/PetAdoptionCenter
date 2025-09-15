@@ -8,7 +8,7 @@ private String type;
 
     @Override
     public void speak() {
-        super.speak();
+        System.out.println(name + " is hissing: " + "hiss hiss");
     }
     public void sleep() {
         super.sleep();
