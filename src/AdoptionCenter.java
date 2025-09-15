@@ -15,7 +15,8 @@ public class AdoptionCenter {
         int numberOfPets = sc.nextInt();
         sc.nextLine();
 
-        //Create array of pets
+
+    //Create array of pets
         Pet[] pets = new Pet[numberOfPets];
 
         for (int i = 0; i < numberOfPets; i++) {
@@ -23,7 +24,16 @@ public class AdoptionCenter {
             String name = sc.nextLine();
             System.out.print("Enter type for pet " + (i + 1) + ": ");
             String type = sc.nextLine();
-            pets[i] = new Pet(name,type);
+            if (type.equalsIgnoreCase("cat")) {
+                pets[i] = new Cat(name, type);
+            }
+            else if (type.equalsIgnoreCase("dog")) {
+                pets[i] = new Dog(name, type);
+            }
+            else if (type.equalsIgnoreCase("lizard")) {
+                pets[i] = new Lizard(name, type);
+            }
+
 
         }
             System.out.println("\nThis is how the pets like to spend their time:");

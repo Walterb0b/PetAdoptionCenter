@@ -13,7 +13,7 @@ public class Cat extends Pet {
         super.sleep();
     }
         public void speak() {
-            super.speak();
+            System.out.println(getName() + " Is Meowing " + "Meow Meow");
         }
         public void move() {
         super.move();

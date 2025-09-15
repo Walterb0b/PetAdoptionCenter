@@ -5,7 +5,7 @@ public class Dog extends Pet {
 
     @Override
    public void speak() {
-        super.speak();
+        System.out.println(getName() + " Is barking " + "Woof woof");
     }
     public void sleep() {
         super.sleep();
