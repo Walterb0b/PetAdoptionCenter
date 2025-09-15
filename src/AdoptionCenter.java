@@ -23,7 +23,7 @@ public class AdoptionCenter {
             String name = sc.nextLine();
             System.out.print("Enter type for pet " + (i + 1) + ": ");
             String type = sc.nextLine();
-            Pet[i] = new Pet(name,type);
+            pets[i] = new Pet(name,type);
 
         }
             System.out.println("\nThis is how the pets like to spend their time:");
