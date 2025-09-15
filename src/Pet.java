@@ -30,5 +30,8 @@ public class Pet {
         System.out.println(name + " is sleeping");
     }
 
+    public void move(){
+        System.out.println("The " + type + " " + name + " is running");
+    }
 
 }
