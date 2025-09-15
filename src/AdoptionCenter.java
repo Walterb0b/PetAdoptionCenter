@@ -22,5 +22,11 @@ public class AdoptionCenter {
 
 
 
+
+        //Display pets
+        System.out.println("Here are all the pets:");
+        for(Pet pet : pets){
+            System.out.println(pet);
+        }
     }
 }
