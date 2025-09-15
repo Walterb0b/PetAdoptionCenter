@@ -23,4 +23,13 @@ public class Pet {
         return name + " " + "(" + type +")";
     }
 
+    public void speak(){
+        System.out.println(name + " is speaking");
+    }
+
+    public void sleep(){
+        System.out.println(name + " is sleeping");
+    }
+
+
 }
