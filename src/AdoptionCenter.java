@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AdoptionCenter {
     public static void main(String[] args) {
-
+    adoptioncenter();
     }
 
     public static void adoptioncenter(){
@@ -21,19 +21,24 @@ public class AdoptionCenter {
         for (int i = 0; i < numberOfPets; i++) {
             System.out.print("Enter name for pet " + (i + 1) + ": ");
             String name = sc.nextLine();
-            pets[i] = new Pet(name);
-
-        }
-        for (int i = 0; i < numberOfPets; i++) {
             System.out.print("Enter type for pet " + (i + 1) + ": ");
             String type = sc.nextLine();
-            pets[i] = new Pet(type);
+            Pet[i] = new Pet(name,type);
 
+        }
+            System.out.println("\nThis is how the pets like to spend their time:");
+            for (Pet pet : pets) {
+            pet.speak();
+            pet.sleep();
+            pet.move();
         }
 
 
 
-
-
+        //Display pets
+        System.out.println("Here are all the pets:");
+        for(Pet pet : pets){
+            System.out.println(pet);
+        }
     }
 }
