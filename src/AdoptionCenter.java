@@ -13,7 +13,12 @@ public class AdoptionCenter {
         System.out.println("Hello and welcome to the adoption center!");
         System.out.print("How many pets would you like to register: ");
         int numberOfPets = sc.nextInt();
-        sc.next();
+        sc.nextLine();
+
+        //Create array of pets
+        Pet[] pets = new Pet[numberOfPets];
+
+
 
 
 
