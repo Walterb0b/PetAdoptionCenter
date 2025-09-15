@@ -1,6 +1,5 @@
 import java.util.Scanner;
 
-
 public class AdoptionCenter {
     public static void main(String[] args) {
 
@@ -18,20 +17,6 @@ public class AdoptionCenter {
 
         //Create array of pets
         Pet[] pets = new Pet[numberOfPets];
-
-for (int i = 0; i < numberOfPets; i++) {
-    System.out.print("Enter name for Pet" + (i + 1) + ": ");
-    String name = sc.nextLine();
-    pets[i] = new Pet(name);
-
-    for (int i = 0; i < numberOfPets; i++) {
-        System.out.print("Enter type for Pet" + (i + 1) + ": ");
-        String type = sc.nextLine();
-        pets[i] = new Pet(type);
-
-    }
-}
-
 
 
 
