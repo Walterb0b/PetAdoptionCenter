@@ -2,7 +2,6 @@ public class Pet {
     private String name;
     private String type;
 
-
     //Constructor
     Pet(String name, String type){
         this.name = name;
