@@ -7,6 +7,15 @@ private String type;
     }
 
     @Override
-    private String speak();
-}
+    public void speak() {
+        super.speak();
+    }
+    public void sleep() {
+        super.sleep();
+        }
+    public void move() {
+        super.move();
+    }
+    }
+
 
