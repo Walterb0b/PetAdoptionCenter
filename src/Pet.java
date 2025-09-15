@@ -21,15 +21,15 @@ public class Pet {
     public String toString(){
         return name + " " + "(" + type +")";
     }
-
+    //Speak method
     public void speak(){
         System.out.println(name + " is speaking");
     }
-
+    //Sleep method
     public void sleep(){
         System.out.println(name + " is sleeping");
     }
-
+    //Move method
     public void move(){
         System.out.println("The " + type + " " + name + " is running");
     }
