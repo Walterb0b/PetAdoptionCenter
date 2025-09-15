@@ -19,19 +19,19 @@ public class Pet {
     //To string
     @Override
     public String toString(){
-        return name + " " + "(" + type +")";
+        return getName() + " " + "(" + getType() +")";
     }
     //Speak method
     public void speak(){
-        System.out.println(name + " is speaking");
+        System.out.println(getName() + " is speaking");
     }
     //Sleep method
     public void sleep(){
-        System.out.println(name + " is sleeping");
+        System.out.println(getName() + " is sleeping");
     }
     //Move method
     public void move(){
-        System.out.println("The " + type + " " + name + " is running");
+        System.out.println("The " + getType() + " " + getName() + " is running");
     }
 
 }

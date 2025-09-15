@@ -1,9 +1,6 @@
 public class Cat extends Pet {
 
-    private String name;
-    private String type;
-
-    Cat(String type, String name) {
+    Cat(String name, String type) {
         super(name, type);
     }
 
