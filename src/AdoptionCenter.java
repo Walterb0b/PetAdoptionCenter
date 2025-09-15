@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class AdoptionCenter {
     public static void main(String[] args) {
-
+    adoptioncenter();
     }
 
     public static void adoptioncenter(){
@@ -18,8 +18,12 @@ public class AdoptionCenter {
         //Create array of pets
         Pet[] pets = new Pet[numberOfPets];
 
-
-
+System.out.println("\nThis is how the pets like to spend their time:");
+for (Pet pet : pets) {
+    pet.speak();
+    pet.sleep();
+    pet.move();
+}
 
 
 
